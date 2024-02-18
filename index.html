@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticketing</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css">
+
 </head>
-<body>
-    
+
+<body class="mx-5 lg:mx-28 space-y-28">
+
+    <header>
+
+        <section>
+            <!-- navbar -->
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="font-raleway text-lg font-medium text-[#030712B3]">Home</a></li>
+                            <li><a class="font-raleway text-lg font-medium text-[#030712B3]">About</a></li>
+                            <li><a class="font-raleway text-lg font-medium text-[#030712B3]">Destination</a></li>
+                            <li><a class="font-raleway text-lg font-medium text-[#030712B3]">Search</a></li>
+
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost font-raleway font-extrabold text-4xl">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 gap-10">
+
+                        <li><a class="font-raleway text-lg font-medium text-[#030712B3]">Home</a></li>
+                        <li><a class="font-raleway text-lg font-medium text-[#030712B3]">About</a></li>
+                        <li><a class="font-raleway text-lg font-medium text-[#030712B3]">Destination</a></li>
+                        <li><a class="font-raleway text-lg font-medium text-[#030712B3]">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a
+                        class="btn font-raleway border border-[#1dd10066] bg-[#1dd1001a] px-7 font-bold text-xl text-[#1DD100] rounded-xl">Bus
+                        <img src="./images/bus-icon.png" alt="bus"></a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!-- header section -->
+            <div class="bg-[url('./images/banner.png')] w-full lg:h-[550px] rounded-3xl mt-8">
+
+                <div class="text-center pt-16 space-y-4">
+                    <h2 class="text-6xl font-extrabold font-raleway text-[#FFFFFF]">End-to-End Travel with <br><span
+                            class="text-[#1DD100]">P Paribahan</span></h2>
+                    <p class="text-lg font-normal font-inter text-[#FFFFFF]">To plan an end-to-end travel journey with P
+                        Paribahan, a popular bus service in Bangladesh.</p>
+                    <button class="btn bg-[#1DD100] text-[#030712] font-raleway font-bold text-xl">Buy Tickets</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section>
+            <!-- offer section -->
+            <h3 class="text-center font-raleway font-bold text-4xl text-[#030712]">Best offers for you</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
+
+                <div class="flex flex-row bg-[#FFBF0F] items-center rounded-3xl">
+                    <div class="grid flex-grow card p-3 lg:p-12">
+                        <h3 class="font-black text-4xl font-inter text-[#030712CC]">15% OFF</h3>
+                        <P class="font-inter text-xl font-semibold text-[#030712CC]">on your next purchase</P>
+                        <P class="font-inter text-lg font-medium text-[#03071280]">use by January 2024</P>
+                    </div>
+                    <div><img src="./images/cupon-devider.png" alt="divider"></div>
+                    <div class="grid flex-grow card p-2 lg:p-5">
+                        <h3 class="font-raleway font-bold text-3xl text-[#030712]">NEW15</h3>
+                        <p class="font-raleway font-medium text-xl">Coupon Code</p>
+                    </div>
+                </div>
+
+
+
+                <div class="flex lg:flex-row bg-[#FFBF0F] items-center rounded-3xl">
+                    <div class="grid flex-grow card p-3 lg:p-12">
+                        <h3 class="font-black text-4xl font-inter text-[#030712CC]">20% OFF</h3>
+                        <P class="font-inter text-xl font-semibold text-[#030712CC]">on your next purchase</P>
+                        <P class="font-inter text-lg font-medium text-[#03071280]">use by January 2024</P>
+                    </div>
+                    <div><img src="./images/cupon-devider.png" alt="divider"></div>
+                    <div class="grid flex-grow card p-2 lg:p-5">
+                        <h3 class="font-raleway font-bold text-3xl text-[#030712]">Couple 20</h3>
+                        <p class="font-raleway font-medium text-xl">Coupon Code</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center mt-20">
+                <button
+                    class="font-raleway font-bold text-xl text-[#1DD100] border border-[#1DD100] px-7 py-5 rounded-xl">See
+                    All Offers
+                </button>
+            </div>
+
+
+        </section>
+    </main>
+
 </body>
+
 </html>
