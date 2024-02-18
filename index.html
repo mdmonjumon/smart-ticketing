@@ -152,37 +152,45 @@
                         <!-- Greenline Paribahan -->
 
                         <div class="grid flex-grow card p-8">
-                            <div class="flex justify-between items-center">
-                                <div class="flex gap-2">
+                            <div class="flex justify-between items-center flex-col lg:flex-row gap-2 mb-6">
+                                <div class="flex flex-col lg:flex-row gap-2">
                                     <div><img src="./images/bus-logo.png" alt="bus logo"></div>
                                     <div>
-                                        <h3>Greenline Paribahan</h3>
-                                        <p>Coach-009-WEB ! AC_Business</p>
+                                        <h3 class="font-raleway text-3xl font-bold text-[#030712]">Greenline Paribahan
+                                        </h3>
+                                        <p class="font-inter font-normal text-lg text-[#03071299]">Coach-009-WEB !
+                                            AC_Business</p>
                                     </div>
                                 </div>
 
                                 <div class="flex gap-2 rounded-xl bg-[#1DD10026] p-4">
-                                    <img src="./images/seat-gray.png" alt="bust seat">
-                                    <p>40 Seats left</p>
+                                    <img src="./images/seat-green.png" alt="bust seat">
+                                    <p class="font-inter font-medium text-lg text-[#1DD100]">40 Seats left</p>
                                 </div>
                             </div>
 
                             <div class="bg-[#F7F8F8] rounded-3xl p-8 space-y-5">
 
                                 <div class="flex justify-between border-b border-dashed pb-4">
-                                    <p>Route</p>
-                                    <p>Dhaka - Sylhet</p>
+                                    <p class="font-raleway font-semibold text-lg text-[#03071299]">Route</p>
+                                    <p class="font-raleway font-semibold text-lg text-[#030712]">Dhaka - Sylhet</p>
                                 </div>
 
                                 <div class="flex justify-between border-b border-dashed pb-5">
-                                    <p>Departure Time</p>
-                                    <p>9:00 PM</p>
+                                    <p class="font-raleway font-semibold text-lg text-[#03071299]">Departure Time</p>
+                                    <p class="font-raleway font-semibold text-lg text-[#030712]">9:00 PM</p>
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex flex-col lg:flex-row gap-2 justify-between">
 
-                                    <p class="rounded-xl bg-[#0307120D] p-4">Boarding Point - Laxmipur</p>
-                                    <p class="rounded-xl bg-[#0307120D] p-4">Dropping Point - Bagura</p>
-                                    <p class="rounded-xl bg-[#0307120D] p-4">Est Time - 11 Hour</p>
+                                    <p
+                                        class="rounded-xl bg-[#0307120D] p-4 font-inter font-medium text-base text-[#030712CC]">
+                                        Boarding Point - Laxmipur</p>
+                                    <p
+                                        class="rounded-xl bg-[#0307120D] p-4 font-inter font-medium text-base text-[#030712CC]">
+                                        Dropping Point - Bagura</p>
+                                    <p
+                                        class="rounded-xl bg-[#0307120D] p-4 font-inter font-medium text-base text-[#030712CC]">
+                                        Est. Time - 11 Hour</p>
                                 </div>
                             </div>
 
@@ -206,15 +214,221 @@
 
             <!--------------- select your seat ------------------>
 
+            <div class="flex justify-between mt-12 bg-[#FFFFFF] rounded-3xl mx-5 lg:mx-28 p-8">
+                <div class="flex-grow px-8">
+                    <h4 class="font-raleway font-semibold text-2xl text-[#030712] mt-4">Select Your Seat</h4>
+                    <div class="flex justify-between my-4">
+                        <div class="flex items-center gap-2">
+                            <img class="h-5 w-5" src="./images/seat-gray.png" alt="">
+                            <p class="font-inter font-medium text-lg text-[#03071280]">Available</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img class="h-5 w-5" src="./images/seat-green-filled.png" alt="">
+                            <p class="font-inter font-medium text-lg text-[#1DD100]">Selected</p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex justify-end">
+                        <svg width="110.000000" height="56.000000" viewBox="0 0 110 56" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                Created with Pixso.
+                            </desc>
+                            <defs>
+                                <clipPath id="clip6_130">
+                                    <rect id="tabler-icon-steering-wheel" width="32.000000" height="32.000000"
+                                        transform="translate(39.000000 12.000000)" fill="white" fill-opacity="0" />
+                                </clipPath>
+                            </defs>
+                            <rect id="Rectangle 12" rx="12.000000" width="110.000000" height="56.000000" fill="#030712"
+                                fill-opacity="0.100000" />
+                            <rect id="tabler-icon-steering-wheel" width="32.000000" height="32.000000"
+                                transform="translate(39.000000 12.000000)" fill="#FFFFFF" fill-opacity="0" />
+                            <g clip-path="url(#clip6_130)">
+                                <path id="Vector"
+                                    d="M43.9133 32.5922C44.5166 34.0481 45.4004 35.371 46.5146 36.4853C47.6289 37.5996 48.9519 38.4835 50.4077 39.0865C51.8638 39.6896 53.4241 40 55 40C56.5759 40 58.1362 39.6896 59.5923 39.0865C61.0481 38.4835 62.3711 37.5996 63.4854 36.4853C64.5996 35.371 65.4834 34.0481 66.0867 32.5922C66.6897 31.1363 67 29.5759 67 28C67 26.4241 66.6897 24.8637 66.0867 23.4078C65.4834 21.9519 64.5996 20.629 63.4854 19.5147C62.3711 18.4004 61.0481 17.5165 59.5923 16.9135C58.1362 16.3104 56.5759 16 55 16C53.4241 16 51.8638 16.3104 50.4077 16.9135C48.9519 17.5165 47.6289 18.4004 46.5146 19.5147C45.4004 20.629 44.5166 21.9519 43.9133 23.4078C43.3103 24.8637 43 26.4241 43 28C43 29.5759 43.3103 31.1363 43.9133 32.5922ZM53.1145 29.8856C53.6145 30.3857 54.2927 30.6667 55 30.6667C55.7073 30.6667 56.3855 30.3857 56.8855 29.8856C57.3857 29.3855 57.6667 28.7072 57.6667 28C57.6667 27.2928 57.3857 26.6145 56.8855 26.1144C56.3855 25.6143 55.7073 25.3333 55 25.3333C54.2927 25.3333 53.6145 25.6143 53.1145 26.1144C52.6143 26.6145 52.3333 27.2928 52.3333 28C52.3333 28.7072 52.6143 29.3855 53.1145 29.8856ZM55 30.6667L55 40M52.3333 28L43.3333 25.3333M57.6667 28L66.6667 25.3333"
+                                    stroke="#030712" stroke-opacity="0.700000" stroke-width="2.000000"
+                                    stroke-linejoin="round" stroke-linecap="round" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- seats -->
 
 
 
+                    <div class="grid grid-cols-2 gap-6 mt-6">
+                        <!---------------- A -------------------->
+                        <div class="space-x-8">
+                            <span>A</span>
+                            <button class="btn btn-active w-28 h-14">A1</button>
+                            <button class="btn btn-active w-28 h-14">A2</button>
+                        </div>
+                        <div class="space-x-8 flex justify-end">
+                            <button class="btn btn-active w-28 h-14">A3</button>
+                            <button class="btn btn-active w-28 h-14">A4</button>
+                        </div>
 
+                        <!---------------- B -------------------->
+                        <div class="space-x-8">
+                            <span>B</span>
+                            <button class="btn btn-active w-28 h-14">B1</button>
+                            <button class="btn btn-active w-28 h-14">B2</button>
+                        </div>
+                        <div class="space-x-8 flex justify-end">
+                            <button class="btn btn-active w-28 h-14">B3</button>
+                            <button class="btn btn-active w-28 h-14">B4</button>
+                        </div>
+                        <!---------------- C -------------------->
+                        <div class="space-x-8">
+                            <span>B</span>
+                            <button class="btn btn-active w-28 h-14">C1</button>
+                            <button class="btn btn-active w-28 h-14">C2</button>
+                        </div>
+                        <div class="space-x-8 flex justify-end">
+                            <button class="btn btn-active w-28 h-14">C3</button>
+                            <button class="btn btn-active w-28 h-14">C4</button>
+                        </div>
+                        <!---------------- D -------------------->
+                        <div class="space-x-8">
+                            <span>B</span>
+                            <button class="btn btn-active w-28 h-14">D1</button>
+                            <button class="btn btn-active w-28 h-14">D2</button>
+                        </div>
+                        <div class="space-x-8 flex justify-end">
+                            <button class="btn btn-active w-28 h-14">D3</button>
+                            <button class="btn btn-active w-28 h-14">D4</button>
+                        </div>
+                        <!---------------- E -------------------->
+                        <div class="space-x-8">
+                            <span>B</span>
+                            <button class="btn btn-active w-28 h-14">E1</button>
+                            <button class="btn btn-active w-28 h-14">E2</button>
+                        </div>
+                        <div class="space-x-8 flex justify-end">
+                            <button class="btn btn-active w-28 h-14">E3</button>
+                            <button class="btn btn-active w-28 h-14">E4</button>
+                        </div>
+                        <!---------------- F -------------------->
+                        <div class="space-x-8">
+                            <span>B</span>
+                            <button class="btn btn-active w-28 h-14">F1</button>
+                            <button class="btn btn-active w-28 h-14">F2</button>
+                        </div>
+                        <div class="space-x-8 flex justify-end">
+                            <button class="btn btn-active w-28 h-14">F3</button>
+                            <button class="btn btn-active w-28 h-14">F4</button>
+                        </div>
+                        <!---------------- G -------------------->
+                        <div class="space-x-8">
+                            <span>B</span>
+                            <button class="btn btn-active w-28 h-14">G1</button>
+                            <button class="btn btn-active w-28 h-14">G2</button>
+                        </div>
+                        <div class="space-x-8 flex justify-end">
+                            <button class="btn btn-active w-28 h-14">G3</button>
+                            <button class="btn btn-active w-28 h-14">G4</button>
+                        </div>
+                        <!---------------- H -------------------->
+                        <div class="space-x-8">
+                            <span>B</span>
+                            <button class="btn btn-active w-28 h-14">H1</button>
+                            <button class="btn btn-active w-28 h-14">H2</button>
+                        </div>
+                        <div class="space-x-8 flex justify-end">
+                            <button class="btn btn-active w-28 h-14">H3</button>
+                            <button class="btn btn-active w-28 h-14">H4</button>
+                        </div>
+                        <!---------------- I -------------------->
+                        <div class="space-x-8">
+                            <span>B</span>
+                            <button class="btn btn-active w-28 h-14">I1</button>
+                            <button class="btn btn-active w-28 h-14">I2</button>
+                        </div>
+                        <div class="space-x-8 flex justify-end">
+                            <button class="btn btn-active w-28 h-14">I3</button>
+                            <button class="btn btn-active w-28 h-14">I4</button>
+                        </div>
+                        <!---------------- J -------------------->
+                        <div class="space-x-8">
+                            <span>B</span>
+                            <button class="btn btn-active w-28 h-14">J1</button>
+                            <button class="btn btn-active w-28 h-14">J2</button>
+                        </div>
+                        <div class="space-x-8 flex justify-end">
+                            <button class="btn btn-active w-28 h-14">J3</button>
+                            <button class="btn btn-active w-28 h-14">J4</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div>
+
+                    <div class="bg-[#F7F8F8] rounded-xl px-8 py-4 space-y-4">
+
+                        <h4 class="font-raleway font-semibold text-2xl text-[#030712]">Select Your Seat</h4>
+
+                        <div class="flex justify-between">
+                            <p class="font-inter font-medium text-base text-[#030712]">Seat</p>
+                            <p class="font-inter font-medium text-base text-[#030712]">Class</p>
+                            <p class="font-inter font-medium text-base text-[#030712]">Price</p>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <p class="font-inter font-medium text-base text-[#030712]">Total Price</p>
+                            <p class="font-inter font-medium text-base text-[#030712]">BDT </p>
+
+                        </div>
+
+                        <div class="rounded-xl bg-[#FFFFFF] p-1">
+                            <input class="py-2 pl-2 font-inter font-normal text-sm text-[#03071266]" type="text" name="" id="" placeholder="Have any coupon?">
+                            <button class="btn bg-[#1DD100] text-[#FFFFFF]">Apply</button>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="font-inter font-medium text-base text-[#030712]">Grand Total</p>
+                            <p class="font-inter font-medium text-base text-[#030712]">BDT</p>
+                        </div>
+
+                    </div>
+
+                    <h4 class="font-inter font-semibold text-base text-[#030712] my-4">Passenger Name*</h4>
+
+                    <input
+                        class="w-full py-4 pl-5 border rounded-xl border-[#0307121A] font-inter font-normal text-base text-[#03071266]"
+                        type="text" name="" id="" placeholder="Enter your name">
+
+                    <h4 class="font-inter font-semibold text-base text-[#030712] my-4">Passenger Name*</h4>
+
+                    <input
+                        class="w-full py-4 pl-5 border rounded-xl border-[#0307121A] font-inter font-normal text-base text-[#03071266]"
+                        type="number" name="" id="" placeholder="Enter your phone number">
+
+                    <h4 class="font-inter font-semibold text-base text-[#030712] my-4">Passenger Name*</h4>
+
+                    <input
+                        class="w-full py-4 pl-5 border rounded-xl border-[#0307121A] font-inter font-normal text-base text-[#03071266]"
+                        type="email" name="" id="" placeholder="Enter your email id">
+
+
+                    <button class="btn bg-[#1DD100] text-[#FFFFFF] w-full my-6">Next</button>
+
+
+                    <div class="flex justify-around">
+                        <p class="font-inter font-normal text-base text-[#03071299] underline">Terms and Conditions</p>
+                        <p class="font-inter font-normal text-base text-[#03071299] underline">Cancellation Policy</p>
+                        
+                    </div>
+                </div>
+
+            </div>
         </section>
 
-
-
-
+        <footer>
+            
+        </footer>
     </main>
 
 </body>
