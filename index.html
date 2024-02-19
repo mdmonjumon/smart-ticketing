@@ -67,7 +67,8 @@
                             class="text-[#1DD100]">P Paribahan</span></h2>
                     <p class="text-lg font-normal font-inter text-[#FFFFFF]">To plan an end-to-end travel journey with P
                         Paribahan, a popular bus service in Bangladesh.</p>
-                    <button onclick="scrollBuyButtonToPhParibahan()" class="btn bg-[#1DD100] text-[#030712] font-raleway font-bold text-xl">Buy Tickets</button>
+                    <button onclick="scrollBuyButtonToPhParibahan()"
+                        class="btn bg-[#1DD100] text-[#030712] font-raleway font-bold text-xl">Buy Tickets</button>
                 </div>
 
             </div>
@@ -293,12 +294,12 @@
                         <!---------------- A -------------------->
                         <div class="space-x-8">
                             <span>A</span>
-                            <button class="btn btn-active w-28 h-14">A1</button>
-                            <button class="btn btn-active w-28 h-14">A2</button>
+                            <button onclick="highlightButton()" id="A1" class="btn btn-active w-28 h-14">A1</button>
+                            <button  class="f btn btn-active w-28 h-14">A2</button>
                         </div>
                         <div class="space-x-8 flex justify-end">
-                            <button class="btn btn-active w-28 h-14">A3</button>
-                            <button class="btn btn-active w-28 h-14">A4</button>
+                            <button class="f btn btn-active w-28 h-14">A3</button>
+                            <button class="f btn btn-active w-28 h-14">A4</button>
                         </div>
 
                         <!---------------- B -------------------->
@@ -401,12 +402,17 @@
                     <div class="bg-[#F7F8F8] rounded-xl px-8 py-4 space-y-4">
 
                         <h4 class="font-raleway font-semibold text-2xl text-[#030712]">Select Your Seat</h4>
+                        <div id="add-selected-seats">
+                            <div class="flex justify-between">
+                                <p class="font-inter font-medium text-base text-[#030712]">Seat <span
+                                        id="selected-seats"></span></p>
+                                <p class="font-inter font-medium text-base text-[#030712]">Class</p>
+                                <p class="font-inter font-medium text-base text-[#030712]">Price</p>
+                            </div>
 
-                        <div class="flex justify-between">
-                            <p class="font-inter font-medium text-base text-[#030712]">Seat</p>
-                            <p class="font-inter font-medium text-base text-[#030712]">Class</p>
-                            <p class="font-inter font-medium text-base text-[#030712]">Price</p>
+
                         </div>
+
 
                         <div class="flex justify-between">
                             <p class="font-inter font-medium text-base text-[#030712]">Total Price</p>
@@ -517,11 +523,11 @@
                     limited.2024</p>
 
                 <div class="flex gap-8 font-inter font-medium text-base text-[#FFFFFF] list-none">
-                    
-                        <li><a href=""></a>Terms & condition</li>
-                        <li><a href=""></a>Return & refund policy</li>
-                        <li><a href=""></a>Privacy policy</li>
-                    
+
+                    <li><a href=""></a>Terms & condition</li>
+                    <li><a href=""></a>Return & refund policy</li>
+                    <li><a href=""></a>Privacy policy</li>
+
                 </div>
 
 
