@@ -87,19 +87,7 @@ function hidepepup() {
 
 const applyButton = document.getElementById('apply-button');
 
-// function totalDiscount() {
 
-//     const couponCode = document.getElementById('coupon-code').value;
-//     if (couponCode === 'NEW15') {
-//         if (count === 4) {
-//             const grandPrice= document.getElementById('grand-total').innerText;
-//         const discountForNew = grandPrice * 15 / 100;
-//         const discountedPrice = grandPrice - discountForNew;
-//         document.getElementById('grand-total').innerText = discountedPrice;
-//         }
-//     }
-
-// }
 
 
 function totalDiscount() {
