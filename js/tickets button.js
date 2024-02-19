@@ -8,28 +8,34 @@ function scrollBuyButtonToPhParibahan() {
 const allBtn = document.getElementsByClassName('btn');
 let count = 0;
 
+
 for (const btn of allBtn) {
     btn.addEventListener('click', function(e) {
         count = count + 1;
         document.getElementById('selected-seats').innerText = count;
         btn.classList.add('bg-[#1DD100]');
         selectedSeats.appendChild(div);
+        
+        // console.log(e.target.parentNode.childNodes[3].innerText);
+
+        if (count>4) {
+            alert('You have selected maximum');
+            btn.classList.remove('bg-[#1DD100]');
+            count = count - 1;
+        document.getElementById('selected-seats').innerText = count;
+        }
+       
+
+
     })
 }
 
 
 
-
-// appendChild
-
-function highlightButton(){
-    let button = document.getElementById('A1');
-    button.classList.add('bg-[#1DD100]');
-    // selectedSeats.appendChild(div);
-}
-
-
 // append seats
+
+// console.log(e.target.parentNode.childNodes[3].innerText);
+
 const selectedSeats = document.getElementById('add-selected-seats');
 const div = document.createElement('div');
 const p1 = document.createElement('p');
